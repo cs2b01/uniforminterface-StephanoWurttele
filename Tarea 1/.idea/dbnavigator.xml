@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="cc20ab9b-eab4-43ed-9a1f-aa2734246fef">
-        <schema name="main" object-types="view, table, column" />
+        <schema name="main" object-types="column, dataset trigger, table, constraint, view, index" />
       </connection>
     </loaded-nodes>
   </component>
@@ -68,6 +68,7 @@ WHERE usuario_id=2;</console>
     <connection id="f082902c-03dd-4be1-8a2c-c9f3de16d9ea" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="cc20ab9b-eab4-43ed-9a1f-aa2734246fef" dataset="main.usuario" active-filter-id="" />
     <filter-actions connection-id="cc20ab9b-eab4-43ed-9a1f-aa2734246fef" dataset="main.CURSO" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
