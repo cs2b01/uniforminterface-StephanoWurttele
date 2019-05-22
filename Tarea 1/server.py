@@ -8,16 +8,21 @@ engine=db.createEngine()
 
 app=Flask(__name__)
 
-@app.route('/', methods=['GET'])
-def index():
+@app.route('/create', methods=['GET'])
+def create():
 	db_session = db.getSession(engine)
 	user = entities.Usuario(codigo="201810424", nombre="Stephan", apellido="Wurttele", password="123")
-	# user2 = entities.Usuario(codigo="201810715", nombre="Yennifer", apellido="Ramirez", password="456")
+	user2 = entities.Usuario(codigo="201810715", nombre="Yennifer", apellido="Ramirez", password="456")
 	user3 = entities.Usuario(codigo="201810685", nombre="Mayra", apellido="Molina", password="789")
 	db_session.add(user)
+	db_session.add(user2)
 	db_session.add(user3)
 	db_session.commit()
-	return render_template('index2.html')
+	return render_template('create.html')
+
+@app.route('/')
+def index():
+	return render_template('index.html')
 
 
 @app.route("/users")
