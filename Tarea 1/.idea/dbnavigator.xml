@@ -25,13 +25,13 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="cc20ab9b-eab4-43ed-9a1f-aa2734246fef">
-        <schema name="main" object-types="view, table" />
+        <schema name="main" object-types="view, table, column" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="cc20ab9b-eab4-43ed-9a1f-aa2734246fef">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[CREATE TABLE usuario(
+      <console name="Connection" type="STANDARD" schema="main" session="Main">CREATE TABLE usuario(
     usuario_id INTEGER PRIMARY KEY,
     codigo INTEGER NOT NULL,
     nombre TEXT NOT NULL,
@@ -54,7 +54,7 @@ UPDATE usuario
 WHERE usuario_id=1;
 
 DELETE FROM usuario
-WHERE usuario_id=2;]]></console>
+WHERE usuario_id=2;</console>
     </connection>
     <connection id="f082902c-03dd-4be1-8a2c-c9f3de16d9ea">
       <console name="db.db" type="STANDARD" schema="main" session="Main" />
